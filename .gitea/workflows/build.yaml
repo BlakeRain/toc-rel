@@ -15,7 +15,9 @@ jobs:
         with:
           fetch-depth: 0
       - name: Install dependencies
-        run: sudo apt-get install -y groff pdftk pdfgrep
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y groff pdftk pdfgrep
       - name: Build the PDF
         run: make
       - name: Release PDF
