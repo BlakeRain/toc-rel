@@ -11,12 +11,7 @@
 input=$(mktemp)
 cat > "$input"
 
-# Make sure that the commands we use are present: pdfinfo, pdfgrep, and pdftk
-if ! command -v pdfinfo > /dev/null; then
-  echo "pdfinfo not found. Please install the poppler-utils package." >&2
-  exit 1
-fi
-
+# Make sure that the commands we use are present: pdfgrep and pdftk
 if ! command -v pdfgrep > /dev/null; then
   echo "pdfgrep not found. Please install the pdfgrep package." >&2
   exit 1
