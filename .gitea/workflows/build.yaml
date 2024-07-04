@@ -19,7 +19,7 @@ jobs:
       - name: Build the PDF
         run: make
       - name: Release PDF
-        uses: https://gitea.com/actions/gitea-release-action
+        uses: akkuman/gitea-release-action@v1
         with:
           files: |-
             demo.pdf
