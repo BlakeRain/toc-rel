@@ -19,5 +19,8 @@ A demonstration file using the ms macro package is included, which can be built 
 `Makefile`. Running `make` will use `groff` to create the PDF, and then use `toc-rel.sh` to move the
 table of contents to just after the cover page, updating any bookmarks as required.
 
+You can find the example PDF for download on the [releases] page.
+
 [pdfgrep]: https://pdfgrep.org/
 [pdftk]: https://gitlab.com/pdftk-java/pdftk
+[releases]: https://git.blakerain.com/BlakeRain/toc-rel/releases
